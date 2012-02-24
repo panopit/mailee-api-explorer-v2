@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Mailee Api Explorer v2
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    / link[href='http://fonts.googleapis.com/css?family=Habibi|Podkova|Yesteryear|Playball|Signika' rel='stylesheet' type='text/css']
+    = stylesheet_link_tag "prettify"
+    = javascript_include_tag "prettify/prettify"
+
+  body[data-controller-name=controller.controller_name data-controller-class=controller.class data-action=controller.action_name]
+    .topbar
+      .topbar-inner
+        .container
+          a.brand[href="#" style="position:relative"]
+            = image_tag 'mailee_promo.png', style: "height: 24px; position: absolute; ; left: -8px; top: 6px"
+            span Mailee Api Explorer v2
+          / ul.nav
+          /   li[class=(:active if request.path == '/')]
+          /     a[href="/"] Dashboard
+          /   li.dropdown
+          /     a.dropdown-toggle[href="#"] = @course.title rescue 'Cursos'
+          /     ul.dropdown-menu
+          /       - for course in current_user.courses
+          /         li = link_to course.title, course
+          p.pull-right
+            ul.nav
+              li= link_to 'Ajuda da API', 'http://help.mailee.me/integration_rest.html', target: :_blank
+              li= link_to 'Site do Mailee', 'http://www.mailee.me', target: :_blank
+              / li= link_to 'Rails', 'http://help.mailee.me/integration_rails.html', target: :_blank
+              / li= link_to 'Spree', 'http://help.mailee.me/integration_spree.html', target: :_blank
+              / li= link_to 'PHP', 'http://help.mailee.me/integration_php.html', target: :_blank
+              / li= link_to 'Java', 'https://github.com/diogob/mailee-java-api', target: :_blank
+              / li= link_to '.Net', 'http://help.mailee.me/integration_net.html', target: :_blank
+    .container
+      = yield

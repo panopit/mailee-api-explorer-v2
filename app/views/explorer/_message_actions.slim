@@ -1,0 +1,41 @@
+#messages-index
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'index'
+    = render 'explorer/forms/actions'
+#messages-show
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'show'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'
+#messages-html
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'html'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'
+#messages-new
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'new'
+    = render 'explorer/forms/actions'
+#messages-create
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'create'
+    = render 'explorer/forms/message'
+    = render 'explorer/forms/actions'
+#messages-test
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'test'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/message-test'
+    = render 'explorer/forms/actions'
+#messages-ready
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'ready'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/message-ready'
+    = render 'explorer/forms/actions'
+#messages-update
+  form[action="#/get" method="get"]
+    = hiddens 'messages', 'update'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/message'
+    = render 'explorer/forms/actions'

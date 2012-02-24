@@ -1,0 +1,89 @@
+.clearfix
+  label[for="contact-email"] Email
+  .input
+    .input-prepend
+      span.add-on M
+      input.xlarge[type="text" name="params[contact][email]" id="contact-email"]
+    .help-block Obrigatório
+
+.clearfix
+  label[for="contact-name"] Nome
+  .input
+    .input-prepend
+      span.add-on u
+      input.xlarge[type="text" name="params[contact][name]" id="contact-name"]
+
+= link_to "Mais campos", '#more'
+
+.more.hidden
+  .clearfix
+    label[for="contact-internal_id"] Id Interno
+    .input
+      .input-prepend
+        span.add-on k
+        input.xlarge[type="text" name="params[contact][internal_id]" id="contact-internal_id"]
+
+  .clearfix
+    label[for="contact-company"] Empresa
+    .input
+      .input-prepend
+        span.add-on !
+        input.xlarge[type="text" name="params[contact][company]" id="contact-company"]
+
+  .clearfix
+    label[for="contact-position"] Posição
+    .input
+      .input-prepend
+        span.add-on |
+        input.xlarge[type="text" name="params[contact][position]" id="contact-position"]
+      
+  .clearfix
+    label[for="contact-sex"] Sexo
+    .input
+      .input-prepend
+        span.add-on s
+        input.xlarge[type="text" name="params[contact][sex]" id="contact-sex" placeholder="M ou F"]
+
+  .clearfix
+    label[for="contact-birthday"] Aniversário
+    .input
+      .input-prepend
+        span.add-on a
+        input.xlarge[type="text" name="params[contact][birthday]" id="contact-birthday" placeholder="dd/mm/aaaa"]
+
+  .clearfix
+    label[for="contact-age"] Idade
+    .input
+      .input-prepend
+        span.add-on a
+        input.xlarge[type="text" name="params[contact][age]" id="contact-age"]
+
+  .clearfix
+    label[for="contact-phone"] Telefone
+    .input
+      .input-prepend
+        span.add-on n
+        input.xlarge[type="text" name="params[contact][phone]" id="contact-phone"]
+
+  .clearfix
+    label[for="contact-mobile"] Celular
+    .input
+      .input-prepend
+        span.add-on n
+        input.xlarge[type="text" name="params[contact][mobile]" id="contact-mobile"]
+
+  .clearfix
+    label[for="contact-address"] Endereço
+    .input
+      .input-prepend
+        span.add-on \
+        textarea.xlarge[type="text" name="params[contact][address]" id="contact-address"]
+
+  .clearfix
+    label[for="contact-notes"] Notas
+    .input
+      .input-prepend
+        span.add-on >
+        textarea.xlarge[type="text" name="params[contact][notes]" id="contact-notes"]
+
+/ #TODO dynamic_attributes

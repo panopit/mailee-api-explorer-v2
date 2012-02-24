@@ -1,0 +1,29 @@
+#templates-index
+  form[action="#/get" method="get"]
+    = hiddens 'templates', 'index'
+    = render 'explorer/forms/actions'
+#templates-show
+  form[action="#/get" method="get"]
+    = hiddens 'templates', 'show'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'
+#templates-html
+  form[action="#/get" method="get"]
+    = hiddens 'templates', 'html'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'
+#templates-new
+  form[action="#/get" method="get"]
+    = hiddens 'templates', 'new'
+    = render 'explorer/forms/actions'
+#templates-create
+  form[action="#/get" method="get"]
+    = hiddens 'templates', 'create'
+    = render 'explorer/forms/template'
+    = render 'explorer/forms/actions'
+#templates-update
+  form[action="#/get" method="get"]
+    = hiddens 'templates', 'update'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/template'
+    = render 'explorer/forms/actions'

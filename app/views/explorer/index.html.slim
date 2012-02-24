@@ -1,0 +1,30 @@
+.row#api-key-row
+  .span2 &nbsp;
+  .span12
+    form[action="#/get" method="get"]
+      .clearfix
+        .input[style="margin:0"]
+          h2 https://api.mailee.me/api/v2
+          .input-prepend
+            span.add-on
+            input#api_key.api_key[type="text" name="api_key" placeholder="SUA CHAVE" maxlength="13"]
+          / .help-block Obrigatório
+.row#resources-row
+  .span16
+    = render 'resources'
+.row#actions-row
+  .span16
+    = render 'actions'
+.row#forms-row
+  .span2 &nbsp;
+  .pill-content.span12
+    hr[style="margin-top:0;border-top: 1px solid #ddd"]
+    = render 'root_actions'
+    = render 'contact_actions'
+    = render 'list_actions'
+    = render 'template_actions'
+    = render 'message_actions'
+    / = render 'report_actions'
+.row
+  .span16
+    #result

@@ -1,0 +1,18 @@
+#reports-show
+  form[action="#/get" method="get"]
+    = hiddens 'reports', 'show'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'
+
+#reports-accesses
+  form[action="#/get" method="get"]
+    = hiddens 'reports', 'accesses'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/report-accesses'
+    = render 'explorer/forms/actions'
+
+#reports-unsubscribes
+  form[action="#/get" method="get"]
+    = hiddens 'reports', 'unsubscribes'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'

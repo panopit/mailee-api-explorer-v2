@@ -1,0 +1,44 @@
+.clearfix
+  label[for="list-name"] Nome
+  .input
+    .input-prepend
+      span.add-on g
+      input.xlarge[type="text" name="params[list][name]" id="list-name"]
+
+= link_to "Mais campos", '#more'
+
+.more.hidden
+  .clearfix
+    label[for="list-company"] Empresa
+    .input
+      .input-prepend
+        span.add-on !
+        input.xlarge[type="text" name="params[list][company]" id="list-company"]
+
+  .clearfix
+    label[for="list-description"] Descrição
+    .input
+      .input-prepend
+        span.add-on >
+        textarea.xlarge[type="text" name="params[list][description]" id="list-description"]
+
+  .clearfix
+    label[for="list-phone"] Telefone
+    .input
+      .input-prepend
+        span.add-on n
+        input.xlarge[type="text" name="params[list][phone]" id="list-phone"]
+
+  .clearfix
+    label[for="list-address"] Endereço
+    .input
+      .input-prepend
+        span.add-on \
+        textarea.xlarge[type="text" name="params[list][address]" id="list-address"]
+
+  .clearfix
+    label[for="list-site"] Site
+    .input
+      .input-prepend
+        span.add-on @
+        input.xlarge[type="text" name="params[list][site]" id="list-site"]

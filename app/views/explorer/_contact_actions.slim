@@ -1,0 +1,36 @@
+#contacts-index
+  form[action="#/get" method="get"]
+    = hiddens 'contacts', 'index'
+    = render 'explorer/forms/actions'
+#contacts-show
+  form[action="#/get" method="get"]
+    = hiddens 'contacts', 'show'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'
+#contacts-new
+  form[action="#/get" method="get"]
+    = hiddens 'contacts', 'new'
+    = render 'explorer/forms/actions'
+#contacts-create
+  form[action="#/get" method="get"]
+    = hiddens 'contacts', 'create'
+    = render 'explorer/forms/contact'
+    = render 'explorer/forms/actions'
+#contacts-update
+  form[action="#/get" method="get"]
+    = hiddens 'contacts', 'update'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/contact'
+    = render 'explorer/forms/actions'
+#contacts-list_subscribe
+  form[action="#/get" method="get"]
+    = hiddens 'contacts', 'list_subscribe'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/contact-subscribe'
+    = render 'explorer/forms/actions'
+#contacts-list_unsubscribe
+  form[action="#/get" method="get"]
+    = hiddens 'contacts', 'list_unsubscribe'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/contact-subscribe'
+    = render 'explorer/forms/actions'

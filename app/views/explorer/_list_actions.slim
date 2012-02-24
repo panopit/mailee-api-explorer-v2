@@ -1,0 +1,24 @@
+#lists-index
+  form[action="#/get" method="get"]
+    = hiddens 'lists', 'index'
+    = render 'explorer/forms/actions'
+#lists-show
+  form[action="#/get" method="get"]
+    = hiddens 'lists', 'show'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/actions'
+#lists-new
+  form[action="#/get" method="get"]
+    = hiddens 'lists', 'new'
+    = render 'explorer/forms/actions'
+#lists-create
+  form[action="#/get" method="get"]
+    = hiddens 'lists', 'create'
+    = render 'explorer/forms/list'
+    = render 'explorer/forms/actions'
+#lists-update
+  form[action="#/get" method="get"]
+    = hiddens 'lists', 'update'
+    = render 'explorer/forms/id'
+    = render 'explorer/forms/list'
+    = render 'explorer/forms/actions'

@@ -1,0 +1,192 @@
+// Place all the styles related to the Explorer controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$mac_blue: #DDE4EA;
+
+/* Use this to get all of Bootstrap's @mixins and $variables */
+@import "bootstrap"; 
+@import "compass/css3";
+
+@font-face{
+  font-family: 'IconicStroke';
+  src: font-url("iconic_stroke.eot");
+  src: local('IconicStroke');
+  src: font-url("iconic_stroke.svg#iconic") format('svg');
+  src: font-url("iconic_stroke.otf") format('opentype');
+}
+
+.add-on{
+  font-family: "IconicStroke";
+  font-weight: normal;
+  color: #999 !important;
+  @include text-shadow(0 -1px 1px white);
+  background: #e9e9e9 !important;
+  font-size: 16px;
+  @include transition(all 0.5s);
+  &.active{
+    background: #dde5ff !important;
+    color: #78b !important;
+    border: 1px solid #78b !important;
+  }
+}
+
+body {
+  background: #eee;
+  padding: 60px 0;
+}
+
+#api-key-row{
+  .help-block{
+    margin-left: 62px;
+  }
+  .add-on{
+    height: 52px;
+    font-size: 32px;
+    width: 52px;
+    //padding-top: 20px;
+    vertical-align: middle;
+    line-height: 56px;
+    text-align: center;
+    
+  }
+  .add-on::before {
+    content: "k";
+  }
+  .clearfix.error{
+    .add-on{
+      background: #ffdde5 !important;
+      color: #b78 !important;
+      border: 1px solid #b78 !important;
+    }
+    .add-on::before {
+      content: "X";
+    }
+    input{
+      border: 1px solid #b78 !important;
+    }
+  }
+
+  .clearfix.success{
+    .add-on{
+      background: #ddffe5 !important;
+      color: #7b8 !important;
+      border: 1px solid #7b8 !important;
+    }
+    .add-on::before {
+      content: "y";
+    }
+    input{
+      border: 1px solid #7b8 !important;
+    }
+  }
+
+  #api_key{
+    width: 628px;
+    font-size: 2em;
+    line-height: 2em;
+    height: 52px;
+    color: #333;
+  }
+
+}
+
+#result{
+  position: relative;
+  textarea{
+    position: absolute;
+    left: -20px;
+    width: 100%;
+    height: 200em;
+    padding: 20px;
+    @include box-shadow(-10px 0 12px rgba(0,0,0,0.4));
+    @include border-radius(0px);
+  }
+}
+
+#sidebar{
+  ul#resources{
+    display: block;
+    width: 100%;
+    li{
+      float: left;
+    }
+  }
+  ul.resource-actions{
+    
+  }
+  ul{
+    float: left;
+    display: none;
+    list-style: none;
+    margin: 0;
+    li{
+      a{
+        display: block;
+        padding: 16px;
+        font-size: 16px;
+
+        border-bottom: 1px solid white;
+        border-top: 1px solid #ddd;
+        &.selected{
+          color: black;
+          font-weight: bold;
+        }
+        &:hover{
+          color: black;
+          text-decoration: none;
+        }
+      }
+      ul{
+        display: none;
+      }
+    }
+  }
+}
+
+pre{
+  background: #fff;
+  padding: 10px !important;
+  border: 0;
+  margin: 0;
+  font-size: 1.1em;
+  @include box-shadow(0 0 5px black);
+  line-height: 1.5em;
+  width: 100%;
+}
+
+label{
+  margin-right: 20px;
+  width: 200px;
+}
+.help-block{
+  margin-left: 70px;
+}
+
+#resources-row{
+  display: none;
+}
+
+#actions-row{
+  display: none;
+}
+
+#forms-row{
+  display: none;
+}
+
+.actions{
+  padding-left: 220px;
+}
+
+label{
+  @include text-shadow(0 1px 1px white);
+}
+
+.hidden{
+  display: none;
+}
+
+a[href="#more"]{
+  margin-left: 220px;
+}
