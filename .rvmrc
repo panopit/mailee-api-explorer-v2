@@ -1,1 +1,1 @@
-rvm use 1.9.2@mailee-api-explorer
+rvm use 1.9.2@mailee-api-explorer --create
